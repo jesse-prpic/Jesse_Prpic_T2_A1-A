@@ -18,6 +18,17 @@
 ## Question Six
 ### Explain the three principles of information system security.
 
+Information system security, or otherwise referred to as InfoSec is the processes and proceedural tools designed to protect individual, businesses and organisations information - whether that information being modified, destroyed, distrupted, recored or inspected. 
+Information security is becoming increasingly more important than ever due to the vast development of technology in the 21st century, it is critical that certain data such as financial data, customer account details, intellectual property etc are protected as this could lead to consequences of this data being stolen, data tampering or deletion. 
+Amongst a business standpoint, this can disrupt and damage a reputation of the business causing tangible costs amongst the owners and investors, on an individual standpoint this data could be used against them with the incidents of identify theft or even blackmail.
+
+Confidentiality, Integrity and Available - the CIA Triad
+
+https://www.imperva.com/learn/data-security/information-security-infosec/
+https://www.geeksforgeeks.org/principle-of-information-system-security/
+
+
+
 ## Question Seven
 ### Provide an overview of what would need to be done within an API project to implement at least one of the principles explained in Question 6.
 

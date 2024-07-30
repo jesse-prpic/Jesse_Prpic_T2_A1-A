@@ -19,7 +19,7 @@
 ### Explain the three principles of information system security.
 
 Information system security, or otherwise referred to as InfoSec is the processes and proceedural tools designed to protect individual, businesses and organisations information - whether that information being modified, destroyed, distrupted, recored or inspected. 
-Information security is becoming increasingly more important than ever due to the vast development of technology in the 21st century, it is critical that certain data such as financial data, customer account details, intellectual property etc are protected as this could lead to consequences of this data being stolen, data tampering or deletion. 
+Information security is becoming increasingly more important than ever due to the vast development of technology in the 21st century, it is critical that certain data such as financial data, customer account details, intellectual property etc are protected as this could lead to consequences of this data being stolen, data tampering or deletion. [ insert reference [
 Amongst a business standpoint, this can disrupt and damage a reputation of the business causing tangible costs amongst the owners and investors, on an individual standpoint this data could be used against them with the incidents of identify theft or even blackmail.
 
 Confidentiality, Integrity and Availability are the three structures of what is also known as the CIA Triad (Geveye, 2023). These structures have an ultimate goal in place as a whole, however they have their own individual goals; 
@@ -53,8 +53,33 @@ In 2024, Cambridge Dictionary defined integrity as, "the quality of being honest
 There are many ways for a business to implement this principle into their systems, one being utilising secure backup systems as we have already mentioned - another being "Hashing" and Secure Passowrd Hashing.
 This concept of hashing is a fixed-length alphanumeric value - it is a fingerprint for your data essentially, with each change with the data the value will change. This can be very useful when applying this to stored passwords as it adds random data which makes is more difficult for an attacker to crack a password's hash (Stickney, 2021).
 
-To implement this code into your system; first use a strong hashing algorithm that is designed for password storage (e.ge., bcrypt, Argon2 etc). In addition, you can also add in something called "Salt", by salting your password before hasing as this will ensure that passwords that are identical have a unique hash (Stickney, 2021)..
+To implement this code into your system; first use a strong hashing algorithm that is designed for password storage (e.ge., bcrypt, Argon2, haslib etc). In addition, you can also add in something called "Salt", by salting your password before hasing as this will ensure that passwords that are identical have a unique hash (Stickney, 2021).
 
+In this example we will use bcrypt as our import to initialise the hashing:
+
+An example by geeksforgeeks(2022) provided a simple code to get us started.
+
+______________________
+
+import bcrypt
+ 
+# Declaring our password
+password = b'GeekPassword'
+ 
+# Adding the salt to password
+salt = bcrypt.gensalt()
+# Hashing the password
+hashed = bcrypt.hashpw(password, salt)
+ 
+# printing the salt
+print("Salt :")
+print(salt)
+ 
+# printing the hashed
+print("Hashed")
+print(hashed)
+
+______________________
 
 
 ## Question Eight
@@ -95,3 +120,5 @@ Cambridge Dictionary. (2024). INTEGRITY | Meaning in the Cambridge English Dicti
 Barker, E., & Barker, W. (2019, May 23). Recommendation for Key Management: Part 2 – Best Practices for Key Management Organizations. Csrc.nist.gov. https://csrc.nist.gov/pubs/sp/800/57/pt2/r1/final
 
 Stickney, J. (2021, July 18). Hashing & Integrity — The “I” in the CIA Triad. Medium. https://jacob-e-stickney.medium.com/hashing-integrity-the-i-in-the-cia-triad-98b722b6fe39
+
+https://www.geeksforgeeks.org/how-to-hash-passwords-in-python/

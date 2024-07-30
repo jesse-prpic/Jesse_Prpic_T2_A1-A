@@ -63,7 +63,7 @@ ______________________
 
 import bcrypt
  
-# Declaring our password
+<!-- # Declaring our password -->
 password = b'GeekPassword'
  
 # Adding the salt to password

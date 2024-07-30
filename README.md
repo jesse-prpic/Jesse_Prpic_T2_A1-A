@@ -31,11 +31,8 @@ Confidentiality, Integrity and Availability are the three structures of what is 
 - confidentiality has the main goal of encryption of information as well as utlization of strong password constraints in the means of using different letters, numbers and character. Two Factor Authentication (2FA) is also a practice that is becoming more and more prevelant these days, where security measures have been put in place where you are needing to sign in and confirm a link or code that has been sent to your mobile or email (Principle of Information System Security, 2020).
 
 - integrity has the main goal of making sure that information is accurate and consistent as well as having the ability to recover any data that was lost due to the violation of the informations integrity. 
-
-An example that securitymadesimple, 2020 has provided is; "if the CFO sends a document to be examined or reviewed by the director of finance. The director of finance may try to manipulate the information without the CFO knowing in order to make his/her department look better, launder money etc". 
-
-It reiterates the importance of the controls that businesses and individuals need to have on their information; having secure backups where you are confident you will be able to recover all if not most items; these backups should be routinely done and ongoing. 
-In addition; user access should also be updates and checked routinely; especially if there has been an attempt at a violation.
+An example that securitymadesimple, 2020 has provided is; "if the CFO sends a document to be examined or reviewed by the director of finance. The director of finance may try to manipulate the information without the CFO knowing in order to make his/her department look better, launder money etc". This reiterates the importance of the controls that businesses and individuals need to have on their information; having secure backups where you are confident you will be able to recover all if not most items; these backups should be routinely done and ongoing. 
+In addition; user access should also be updated and checked routinely; especially if there has been an attempt at a violation.
 
 - availability; although the last structure in the CIA Triad; it may be one of the first signs of understanding if there is an attempt of an InfoSec risk as this relates to the reliability and accessbility of information - such as a website. In 2024 a SaiPoint blog post echoed this through a quote; "The availability of element of the CIA triad is often the proverbial canary in the coal mine; if systems have been compromised, availability is usually one of the first indicators of trouble".
 Although confidentiality and integrity may seem like the more important concepts of the CIA Triad - what use is it to anyone if its not accessible.
@@ -47,6 +44,16 @@ Although confidentiality and integrity may seem like the more important concepts
 ## Question Seven
 ### Provide an overview of what would need to be done within an API project to implement at least one of the principles explained in Question 6.
 
+Previously we had touched upon the principles of information security systems or InfoSec, throughout this we learned that this is made up on Confidentiality, Integrity and Availability - CIA Triad.
+Although we did have an overview of what these are, we did not explain how these may be implemented - each of them having different best practices.
+Imagine working for a bank or even your own e-commerce store, with the main purpose being able to process financial transactions - your job is to ensure that these systems have the right practices in place so that transaction are accurate and consistent, this is the main goal of the integrity principle.
+
+In 2024, Cambridge Dictionary defined integrity as, "the quality of being honest and having strong moral principles that you refuse to change", however in this context a more appropriate definition would be; "the property that sensitive data has not been modified or deleted in an unauthorized and undetected manner since it was created, transmitted or stored" (Barker & Barker, 2019).
+
+There are many ways for a business to implement this principle into their systems, one being utilising secure backup systems as we have already mentioned - another being "Hashing" and Secure Passowrd Hashing.
+This concept of hashing is a fixed-length alphanumeric value - it is a fingerprint for your data essentially, with each change with the data the value will change. This can be very useful when applying this to stored passwords as it adds random data which makes is more difficult for an attacker to crack a password's hash (Stickney, 2021).
+
+To implement this code into your system; first use a strong hashing algorithm that is designed for password storage (e.ge., bcrypt, Argon2 etc). In addition, you can also add in something called "Salt", by salting your password before hasing as this will ensure that passwords that are identical have a unique hash (Stickney, 2021)..
 
 
 
@@ -82,3 +89,9 @@ CIA triad: Confidentiality, integrity, and availability. (n.d.). SailPoint. http
 Principle of Information System Security. (2020, January 15). GeeksforGeeks. https://www.geeksforgeeks.org/principle-of-information-system-security/
 
 Geveye, M. O. (2023, November 2). Understanding the Core Principles of Information Security. Centraleyes. https://www.centraleyes.com/core-principles-of-information-security/
+
+Cambridge Dictionary. (2024). INTEGRITY | Meaning in the Cambridge English Dictionary. Cambridge.org. https://dictionary.cambridge.org/dictionary/english/integrity
+
+Barker, E., & Barker, W. (2019, May 23). Recommendation for Key Management: Part 2 – Best Practices for Key Management Organizations. Csrc.nist.gov. https://csrc.nist.gov/pubs/sp/800/57/pt2/r1/final
+
+Stickney, J. (2021, July 18). Hashing & Integrity — The “I” in the CIA Triad. Medium. https://jacob-e-stickney.medium.com/hashing-integrity-the-i-in-the-cia-triad-98b722b6fe39

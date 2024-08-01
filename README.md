@@ -2,6 +2,11 @@
 
 ## Question One
 ### Describe the architecture of a typical API project, such as Flask application
+Within the software industry architecture can be referred to as "the highest-level framework, the skeleton of the software syste. It's one of the very first choices made for the bedrock of the system" (Pitaliya, 2021). Before anything is created the architecture of the system should be the forefront of the project and one of these architecure types is Application Program Interface (API) Architecture.
+
+API Architecure is an ecosystem that is created through utilising the developement of software interfaces that utilise the backend data allowing applications functional for use in applications, this is done through four layers; Information Management, Application, Integration, Interaction.
+
+
 
 ## Question Two
 ### Identify a database commonly used in an API project (such as a Flask application) and discuss the pros and cons of this database.
@@ -37,7 +42,7 @@ In addition; user access should also be updated and checked routinely; especiall
 - availability; although the last structure in the CIA Triad; it may be one of the first signs of understanding if there is an attempt of an InfoSec risk as this relates to the reliability and accessbility of information - such as a website. In 2024 a SaiPoint blog post echoed this through a quote; "The availability of element of the CIA triad is often the proverbial canary in the coal mine; if systems have been compromised, availability is usually one of the first indicators of trouble".
 Although confidentiality and integrity may seem like the more important concepts of the CIA Triad - what use is it to anyone if its not accessible.
 
-{ Summary {
+( Summary
 
 
 
@@ -85,6 +90,35 @@ ______________________
 ## Question Eight
 ### Explain the legal obligations that developers of a social media website or social media application would have in regards to handling user data, with reference to any applicable laws or acts.
 
+In every industry there is a legal obligation and being a developer of a social media website or media application is no exemption. These legal obligations are influenced by a variety of needs to protect user privacy and ensure data security - both on a national and an international scale.
+
+In Australia specifically, we have many acts and legal obligations that need to be abided by - these primarily are based from the Privacy Act 1988. It is the Office of the Australian Information Commissioner (OAIC) that defines the act; "The Privacy Act 1988 was introduced to promote and protect the privacy of individuals and to regulate how Australian Government agencies and organisations with an annual turnover of more than $3 million, and some other organisations, handle personal information" (n.d.).
+
+This legislative act is to set out right's for people in regards to the collection, use and sharing of personal information and is done so through 13 Australian Privacy Principles (APPS). APPS are to govern the rights, obligations and standards pertaining to an organisation or agency's governance and accountability through to the rights of individuals to access their own personal information.
+
+The 13 Australian Principles are;
+- 1. Open and transparent management of personal information
+- 2. Anonymity and pseudonymity
+- 3. Collection of solicited personal information
+- 4. Dealing with unsolicited personal information
+- 5. Notification of the collection of personal information
+- 6. Use or disclosure of personal information
+- 7. Direct marketing
+- 8. Cross-border disclosure of personal information
+- 9. Adoption, use or disclosure of government related identifiers
+- 10. Quality of personal information
+- 11. Security of personal information
+- 12. Access to personal information
+- 13. Correction of personal information
+Provided by Office of the Australian Information Commissioner (OAIC, 2023)
+
+Within the software developer industry the Privacy Act 1988 is heighly relevant when it comes to handling user data, specifically for developers of social media websites. When it comes to APP 1, this reflects the kinds of information that is collected, held and used - whether that being names, emails and location data(OAIC, 2023) and as a social media platform this must have a comprehensive privacy policy in place, generally this will be accessed easily through a link on a website, or app settings.
+
+Another critical APP to mention for software media platforms is APP 11, this relates to the requirement of personal information to be protected from being misused or interferred with (OAIC, 2019). It is important that the software media platforms create strong and well rounded encryption protocols for data.
+
+These are only the legal obligations that pertain to Australia, with a plethora of other legal obligations throughout as well as international laws.
+
+
 ## Question Nine
 ### Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
 
@@ -107,6 +141,8 @@ ______________________
 
 ## Bibliography / References
 
+Pitaliya, S. (2021, May 27). Understanding Software Architecture: A Complete Guide. Medium. https://sarrahpitaliya.medium.com/understanding-software-architecture-a-complete-guide-cb8f05900603
+
 securitymadesimple. (2020, December 24). What are the 3 principles of Information Security? SecurityMadeSimple.org. https://securitymadesimple.org/cybersecurity-blog/what-are-the-3-principles-of-information-security/
 
 CIA triad: Confidentiality, integrity, and availability. (n.d.). SailPoint. https://www.sailpoint.com/identity-library/cia-triad/
@@ -122,3 +158,11 @@ Barker, E., & Barker, W. (2019, May 23). Recommendation for Key Management: Part
 Stickney, J. (2021, July 18). Hashing & Integrity — The “I” in the CIA Triad. Medium. https://jacob-e-stickney.medium.com/hashing-integrity-the-i-in-the-cia-triad-98b722b6fe39
 
 https://www.geeksforgeeks.org/how-to-hash-passwords-in-python/
+
+Office of the Australian Information Commissioner. (n.d.). The Privacy Act. OAIC; Australian Government. https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act
+
+Office of the Australian Information Commissioner. (2023, March 10). Rights and responsibilities. OAIC. https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act/rights-and-responsibilities
+
+OAIC. (2023, March 10). Chapter 1: APP 1 Open and transparent management of personal information. OAIC. https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-1-app-1-open-and-transparent-management-of-personal-information
+
+https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act/rights-and-responsibilities

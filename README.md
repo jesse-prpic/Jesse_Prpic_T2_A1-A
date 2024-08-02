@@ -4,12 +4,39 @@
 ### Describe the architecture of a typical API project, such as Flask application
 Within the software industry architecture can be referred to as "the highest-level framework, the skeleton of the software syste. It's one of the very first choices made for the bedrock of the system" (Pitaliya, 2021). Before anything is created the architecture of the system should be the forefront of the project and one of these architecure types is Application Program Interface (API) Architecture.
 
-API Architecure is an ecosystem that is created through utilising the developement of software interfaces that utilise the backend data allowing applications functional for use in applications, this is done through four layers; Information Management, Application, Integration, Interaction.
+API Architecure is an ecosystem that is created through utilising the developement of software interfaces that utilise the backend data allowing applications functional for use in applications, this is done through four layers; Information Management, Application, Integration, Interaction (What Is API Architecture? | Akana by Perforce, n.d.).
+When it comes to an API project, Flask application is the industry standard which is a lightweight Python web framework which allows the user to utilise the application by splitting the major parts into specific directories and files for a more organised application (www.digitalocean.com, n.d.).
 
+Lets take a typical architecture of a HR portal for example; you will need to have main routes for employees that use the portal, this file could be called "routes.py" and inside this file a directory would be made "employees". Within this framework it would be appropriate to create a module called "employees.py" when you would collate the database and have other directories such as; payroll, leave requests, employee information etc and it would start to look something like;
 
+.
+└── flask_app
+    ├── app
+    │   ├── extensions.py
+    │   ├── __init__.py
+    │   ├── main
+    │   │   ├── __init__.py
+    │   │   └── routes.py
+    │   ├── employees
+    │   │   ├── payroll.py
+    │   │   └── leave_request.py
+    │   ├── payroll
+    │   │   ├── __init__.py
+    │   │   └── routes.py
+    │   ├── leave_request
+    │   │   ├── __init__.py
+    │   │   └── routes.py
+    │  
+    ├── app.db
+    ├── requirements.txt
+    │── config.py
+    └── run.py
+
+This would be a fairly simple starting point of the blueprint for a structure of utilising flask and allowing API's to migrate between systems.
 
 ## Question Two
 ### Identify a database commonly used in an API project (such as a Flask application) and discuss the pros and cons of this database.
+PostgresSQL
 
 ## Question Three
 ### Discuss an implementation of an Agile project management methodology for an API project.
@@ -142,6 +169,10 @@ These are only the legal obligations that pertain to Australia, with a plethora 
 ## Bibliography / References
 
 Pitaliya, S. (2021, May 27). Understanding Software Architecture: A Complete Guide. Medium. https://sarrahpitaliya.medium.com/understanding-software-architecture-a-complete-guide-cb8f05900603
+
+What Is API Architecture? | Akana by Perforce. (n.d.). Akana. https://www.akana.com/blog/api-architecture
+
+www.digitalocean.com. (n.d.). How To Structure a Large Flask Application with Flask Blueprints and Flask-SQLAlchemy | DigitalOcean. [online] Available at: https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy.
 
 securitymadesimple. (2020, December 24). What are the 3 principles of Information Security? SecurityMadeSimple.org. https://securitymadesimple.org/cybersecurity-blog/what-are-the-3-principles-of-information-security/
 

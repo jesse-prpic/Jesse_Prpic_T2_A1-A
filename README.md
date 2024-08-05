@@ -68,9 +68,10 @@ These advantages can be summarised respectively by encouraging collaboration thr
 
 A system that can be used and is industry standard is Git which is open-sourced and is able to be used for any size of project. By having a system in place is one thing, but its another thing on how to manage it, a few things that are recommended is; committing files with a purpose, write good and meaningful messages in each commit and making sure every commit is traceable (Schiestl, 2020).
 
-
 ## Question Five
 ### Provide an overview and description of a standard testing process for an API project.
+
+Testing is an integral part of any process, throughout software it is the practice of testing that validates the performance of a program and how it behaves.
 
 ## Question Six
 ### Explain the three principles of information system security.

@@ -192,6 +192,13 @@ Relational databases are used to hone in on the flexibility and ability to manag
 
 ## Question Ten
 ### Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
+Overtime data can become complex and messy, it is important that this data maintains accuracy, consistency and most importantly the integrity of the data. Integrity of the relational database model is to implement measured to prevent loss, corruption or unauthorized access to information, this can be done through two different types of data integrity; physical and logical (Yackel, 2023).
+
+It has been mentioned that protecting data to maintain its accuracy is important, however it is also important to note this also means the physical integirty of the data - whether that is physical files or data storage. Physical integrity involves the aim to protect the data from being compromised by power outages and natural disasters. Where physical is the tangible data, logical integirty can be defined by the protection from hacking or even human error; this concept comes in four main different formats; Entity, Referential, Domain and User-Defined integrity (Fortinet, n.d.).
+
+
+
+
 
 ## Question Eleven
 ### Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
@@ -258,3 +265,7 @@ OAIC. (2023, March 10). Chapter 1: APP 1 Open and transparent management of pers
 https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act/rights-and-responsibilities
 
 Mastering Relational Database Structure. (2024, April 9). Myscale.com. https://myscale.com/blog/essential-components-relational-database-structure/
+
+Yackel, R. (2023, June 22). 12 Data Integrity Examples: Types, Industry Usage, and Risks. IBM Blog. https://www.ibm.com/blog/data-integrity-examples/
+
+Fortinet. (n.d.). What Is Data Integrity? Types, Risks and How to Ensure. Fortinet. https://www.fortinet.com/resources/cyberglossary/data-integrity

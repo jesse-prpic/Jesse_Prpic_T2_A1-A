@@ -181,6 +181,15 @@ These are only the legal obligations that pertain to Australia, with a plethora 
 ## Question Nine
 ### Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
 
+Throughout almost all web and apps, there will be data that needs to be managed and this can be done through relational databases which helps with structuring the stored data and creating linked relationships between different datasets. Think of this as if you were at a grocery store, you have aisles and those aisles have sections and those sections have different items - this is how the relational database is structured through data management (Mastering Relational Database Structure, 2024).
+
+When we look into the structure of relational databases, it comes* down to how the organisation of this data is structured and whether it is logical; these structures should be organised through, tables, keys and relationships (Mastering Relational Database Structure, 2024). In our example of a grocery store, the table would act as the grocery store and be a distinct entity, with the ability to categorise specific information, the keys would play the role of distinguishing aisles in this instance, there are primary and foreign keys. Primary keys identify each aisle in the grocery store whereas foreign keys demonstrates the relationships between the different aisles. 
+
+Relationships between tables and datasets can be navigated in various ways, these would be; one-to-one, one-to-many and many-to-many relationships. Respectfully, these relationships establish links direct, a single record in one table linked to many multiple records in another table and mutliple records from one table to multiple records in another table.
+For example; one-to-one relationships would be the product at the grocery store with the detailed specification of that product, one-to-many establishes a relationship through the category of the product, each category can include multiple products and finally customer orders have a many-to-many relationship with products, each order can include multiple products, each product can be part of multiple orders.
+
+Relational databases are used to hone in on the flexibility and ability to manage data through the relationship between tables and primary and foreign keys, it allows data to become more structure with keeping the integrity of the data.
+
 ## Question Ten
 ### Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
 
@@ -247,3 +256,5 @@ Office of the Australian Information Commissioner. (2023, March 10). Rights and 
 OAIC. (2023, March 10). Chapter 1: APP 1 Open and transparent management of personal information. OAIC. https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-1-app-1-open-and-transparent-management-of-personal-information
 
 https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act/rights-and-responsibilities
+
+Mastering Relational Database Structure. (2024, April 9). Myscale.com. https://myscale.com/blog/essential-components-relational-database-structure/

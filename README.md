@@ -71,7 +71,13 @@ A system that can be used and is industry standard is Git which is open-sourced 
 ## Question Five
 ### Provide an overview and description of a standard testing process for an API project.
 
-Testing is an integral part of any process, throughout software it is the practice of testing that validates the performance of a program and how it behaves.
+Testing is an integral part of any process, throughout software it is the practice of testing that validates the performance of a program and how it behaves. The intended purpose of API testing it to reveal bugs and inconsistencies and is important to have continuous testing throughout whether this be done manually or through automated processes. Throughout the testing process there is a focus on performance and functionality, however there is also a need on strong testing for security and documentation testing - these make up the four common types of API testings (www.soapui.org, n.d.).
+
+Where functional testing demonstrates how an API meets the specifies requirements through functions and validation, performance testing assesses the conditions of the API such as; handling high traffic, security testing ensures and identifies and vulnerabilityies within the API and lastly API documentation testing provides documentation for wherther the APIs hold true when various test have been performed resulting in those developers who consume the API have it documented resulting in correct data (caisy.io, n.d.).
+These fundamental testing types can be performed through manual or automated frameworks; manual being able to test for usability and ad-hoc testing; whereas automated testing can be used for dynamic testing, load testing and error testing. 
+
+Being able to adopt and adapt API testing is fundamental and is an absolute necessibuty for continuity of successful software. It leaves no room for ambiguity and complaints when it comes to the functionality, performance, security and documentation.
+
 
 ## Question Six
 ### Explain the three principles of information system security.
@@ -213,6 +219,10 @@ What is Source Control? - Amazon Web Services. (2019). Amazon Web Services, Inc.
 GitLab. (n.d.). What is version control? GitLab. https://about.gitlab.com/topics/version-control/
 
 Schiestl, B. (2020, May 21). 8 Version Control Best Practices. Perforce Software. https://www.perforce.com/blog/vcs/8-version-control-best-practices
+
+www.soapui.org. (n.d.). API Testing And How to Do It | SoapUI. [online] Available at: https://www.soapui.org/learn/functional-testing/api-testing-101/.
+
+API Testing: A Comprehensive Guide for Developers | caisy. (n.d.). Caisy.io. https://caisy.io/blog/api-testing-for-developers
 
 securitymadesimple. (2020, December 24). What are the 3 principles of Information Security? SecurityMadeSimple.org. https://securitymadesimple.org/cybersecurity-blog/what-are-the-3-principles-of-information-security/
 

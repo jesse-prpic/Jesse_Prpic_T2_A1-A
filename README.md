@@ -342,15 +342,23 @@ VALUES (6, 'Strawberries', 'Fruit', 1.20, 50);
 
 This would be adding product 6, which is Strawberries that is categorised as Fruit for the price at 1.20 with 50 stock quantities.
 
-
-
+By being able to understand these essential data manipulation operations it allows you to master the ability of managing and maintaining data efficiently.
 
 
 
 ## Question Twelve
 ### Conduct research into a web application (app) and answer each of the following sub-questions:
+One of my favourite joys in life is music, so for this example we will be using Spotify as our example.
+
 
 #### List and describe the software (tech stack) used by the app. 
+
+Spotify is a music streaming web app that was made in 2006 and has been consumed by billions of users world wide, this is because of the ease and the aethetics of the user interface and how it responds - it is a powerhouse when it comes to music streaming.
+
+
+
+
+
 #### Describe or make educated guesses about the hardware used to host the app.
 #### Describe the interaction of technologies within the app.
 #### Describe the way data is structured within the app’s database(s).

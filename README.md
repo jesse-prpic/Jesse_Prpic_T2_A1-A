@@ -194,14 +194,73 @@ Relational databases are used to hone in on the flexibility and ability to manag
 ### Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
 Overtime data can become complex and messy, it is important that this data maintains accuracy, consistency and most importantly the integrity of the data. Integrity of the relational database model is to implement measured to prevent loss, corruption or unauthorized access to information, this can be done through two different types of data integrity; physical and logical (Yackel, 2023).
 
-It has been mentioned that protecting data to maintain its accuracy is important, however it is also important to note this also means the physical integirty of the data - whether that is physical files or data storage. Physical integrity involves the aim to protect the data from being compromised by power outages and natural disasters. Where physical is the tangible data, logical integirty can be defined by the protection from hacking or even human error; this concept comes in four main different formats; Entity, Referential, Domain and User-Defined integrity (Fortinet, n.d.).
+It has been mentioned that protecting data to maintain its accuracy is important, however it is also important to note this also means the physical integirty of the data - whether that is physical files or data storage. Physical integrity involves the aim to protect the data from being compromised by power outages and natural disasters. Where physical is the tangible data, logical integirty can be defined by the protection from hacking or even human error; this concept comes in four main different formats; Entinty, Referential, Domain and User-Defined (Fortinet, n.d.).
 
+Although all four of these main formats are important, it is prevalent that Entity Integrity is considered the most fundamental and is the backbone of relational database mode and its integrity. By having uniquely identifiable rows within a table, you have entity integrity, which also ensures that entity integrity has accurate data retrieval, data consistency and efficient relationship whilst still maintaining the uniqueness and non-nullability values (Naeem, 2020).
 
+The concept of enetity integirty replates to any person, place, or thing that needs to be recoreded in a database.
+If we were to use the grocery store example from question 9, the code to execute entity integrity would be something like this;
 
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,  -- Primary Key column for unique product identification
+    ProductName VARCHAR(100) NOT NULL,  -- Product name must be provided
+    Price DECIMAL(10, 2) NOT NULL,  -- Price must be provided and must be a valid decimal
+    StockQuantity INT NOT NULL,  -- Stock quantity must be provided
+    Category VARCHAR(50)  -- Optional category for the product
+);
+
+We would have the ability to SELECT, ALTER, UPDATE, DELETE and INSERT data throughout to maintain the accuracy and integrity of the data.
 
 
 ## Question Eleven
 ### Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
+
+In our previous question we touched upon the ability to SELECT, UPDATE, DELETE AND INSERT - these are the four types of manipulatative aspects of the Data Manipulation Language (DML) used for retrieving, updating, removing and inserting data (Naeem, 2020).
+
+Here is a detail explanation of each variant of DML:
+
+SELECT
+The ability to retrieve data and manage data is one of the reasons why databases exist, it allows us to select the information that we need and view, this is done by using a "SELECT" statement (Naeem, 2020).
+
+An example of this would be;
+
+SELECT product_name, price
+FROM Products
+WHERE category = 'Fruit';
+
+This retrieves the data from the "products" table and returns a result that includes the names and prices of the category that is "fruit".
+
+UPDATE
+To be able to modify existing records is a powerful tool, and this can be done through the "UPDATE "statement, it enables the user to update records individually or collectively (Naeem, 2020)..
+
+An example of this would be;
+
+UPDATE Products
+SET price = 0.65
+WHERE product_name = 'Bananas';
+
+In this example we have used the UPDATE statement to modify the cost of bananas to 1.65.
+
+DELETE
+We can illistrate removing records from a relational database by using the "DELETE" function, this allows us to manage unnecessary or even obsolete entries.
+
+An example of this would be;
+
+DELETE FROM Products
+WHERE product_name = 'Bananas';
+
+This specifies that we are wanting to remove "Bananas" from the "Products" table.
+
+INSERT
+To be able to add new records to tables is done through the "INSERT" statement and allows you to insert fata in a specified column.
+
+An example of this would be;
+
+INSERT INTO Products (product_id, product_name, category, price, stock_quantity)
+VALUES (6, 'Strawberries', 'Fruit', 1.20, 50);
+
+This would be adding product 6, which is Strawberries that is categorised as Fruit for the priced at 1.20 with 50 stock quantity.
+
 
 ## Question Twelve
 ### Conduct research into a web application (app) and answer each of the following sub-questions:
@@ -269,3 +328,7 @@ Mastering Relational Database Structure. (2024, April 9). Myscale.com. https://m
 Yackel, R. (2023, June 22). 12 Data Integrity Examples: Types, Industry Usage, and Risks. IBM Blog. https://www.ibm.com/blog/data-integrity-examples/
 
 Fortinet. (n.d.). What Is Data Integrity? Types, Risks and How to Ensure. Fortinet. https://www.fortinet.com/resources/cyberglossary/data-integrity
+
+Naeem, T. (2020, February 12). Data Integrity in a Database - Why Is It Important. Astera. https://www.astera.com/type/blog/data-integrity-in-a-database/
+
+Naeem, T. (2020, March 12). Data Manipulation Tools - Understanding the Basics. Astera. https://www.astera.com/type/blog/data-manipulation-tools/

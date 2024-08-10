@@ -113,7 +113,7 @@ Amongst a business standpoint, this can disrupt and damage a reputation of the b
 
 Confidentiality, Integrity and Availability are the three structures of what is also known as the CIA Triad (Geveye, 2023). These structures have an ultimate goal in place as a whole, however they have their own individual goals;
 
-Images/cia_triad.png
+![alt text](cia_triad.png)
 
 - confidentiality has the main goal of encryption of information as well as utilisation of strong password constraints in the means of using different letters, numbers and characters. Two Factor Authentication (2FA) is also a practice that is becoming more and more prevalent these days, where security measures have been put in place where you are needing to sign in and confirm a link or code that has been sent to your mobile or email (Principle of Information System Security, 2020).
 

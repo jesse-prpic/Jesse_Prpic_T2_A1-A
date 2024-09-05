@@ -137,24 +137,18 @@ Although confidentiality and integrity may seem like the more important concepts
 ## Question Seven
 ### Provide an overview of what would need to be done within an API project to implement at least one of the principles explained in Question 6.
 
-
 Previously we had touched upon the principles of information security systems or InfoSec, throughout this we learned that this is made up on Confidentiality, Integrity and Availability - CIA Triad.
 Although we did have an overview of what these are, we did not explain how these may be implemented - each of them having different best practices.
 Imagine working for a bank or even your own ecommerce store, with the main purpose being able to process financial transactions - your job is to ensure that these systems have the right practices in place so that transactions are accurate and consistent, this is the main goal of the integrity principle.
 
-
 In 2024, Cambridge Dictionary defined integrity as, "the quality of being honest and having strong moral principles that you refuse to change", however in this context a more appropriate definition would be; "the property that sensitive data has not been modified or deleted in an unauthorised and undetected manner since it was created, transmitted or stored" (Barker & Barker, 2019).
-
 
 There are many ways for a business to implement this principle into their systems, one being utilising secure backup systems as we have already mentioned - another being "Hashing" and Secure Password Hashing.
 This concept of hashing is a fixed-length alphanumeric value - it is a fingerprint for your data essentially, with each change with the data the value will change. This can be very useful when applying this to stored passwords as it adds random data which makes it more difficult for an attacker to crack a password's hash (Stickney, 2021).
 
-
 To implement this code into your system; first use a strong hashing algorithm that is designed for password storage (e.ge., bcrypt, Argon2, haslib etc). In addition, you can also add in something called "Salt", by salting your password before hasing as this will ensure that passwords that are identical have a unique hash (Stickney, 2021).
 
-
 In this example we will use bcrypt as our import to initialise the hashing:
-
 
 An example by geeksforgeeks(2022) provided a simple code to get us started.
 
@@ -185,9 +179,7 @@ ______________________
 ## Question Eight
 ### Explain the legal obligations that developers of a social media website or social media application would have in regards to handling user data, with reference to any applicable laws or acts.
 
-
 In every industry there is a legal obligation and being a developer of a social media website or media application is no exemption. These legal obligations are influenced by a variety of needs to protect user privacy and ensure data security - both on a national and an international scale.
-
 
 In Australia specifically, we have many acts and legal obligations that need to be abided by - these primarily are based from the Privacy Act 1988. It is the Office of the Australian Information Commissioner (OAIC) that defines the act; "The Privacy Act 1988 was introduced to promote and protect the privacy of individuals and to regulate how Australian Government agencies and organisations with an annual turnover of more than $3 million, and some other organisations, handle personal information" (n.d.).
 
@@ -211,17 +203,11 @@ The 13 Australian Principles are;
 - 13. Correction of personal information
 Provided by Office of the Australian Information Commissioner (OAIC, 2023)
 
-
 Within the software developer industry the Privacy Act 1988 is heighly relevant when it comes to handling user data, specifically for developers of social media websites. When it comes to APP 1, this reflects the kinds of information that is collected, held and used - whether that being names, emails and location data(OAIC, 2023) and as a social media platform this must have a comprehensive privacy policy in place, generally this will be accessed easily through a link on a website, or app settings.
-
 
 Another critical APP to mention for software media platforms is APP 11, this relates to the requirement of personal information to be protected from being misused or interfered with (OAIC, 2019). It is important that the software media platforms create strong and well rounded encryption protocols for data.
 
-
 These are only the legal obligations that pertain to Australia, with a plethora of other legal obligations throughout as well as international laws.
-
-
-
 
 ## Question Nine
 ### Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
@@ -342,18 +328,35 @@ By being able to understand these essential data manipulation operations it allo
 
 ## Question Twelve
 ### Conduct research into a web application (app) and answer each of the following sub-questions:
-One of my favourite joys in life is music, so for this example we will be using Spotify as our example.
+One of my favourite joys in life is music, with my top arstist of the year usually being Doja Cat, Billie Eislish and Hilary Duff - so for this example we will be using Spotify as our example. Spotify is a music streaming web app that was made in 2006 and has been consumed by billions of users world wide, this is because of the ease and the aethetics of the user interface and how it responds - it is a powerhouse when it comes to music streaming.
 
 
 #### List and describe the software (tech stack) used by the app. 
 
-Spotify is a music streaming web app that was made in 2006 and has been consumed by billions of users world wide, this is because of the ease and the aethetics of the user interface and how it responds - it is a powerhouse when it comes to music streaming.
+Within Spotify, the tech stack used by the app is made up of 77 different tools and technologies; this ranges from the languages and frameworks, developement tools, libraries, application hosting, application utilities, analytics and more (Spotify Tech Stack, n.d.). Throughout this we will be highlighting many of these concepts throughout the front-end and back-end tech stack as well as highlighting other technologies used.
+
+As the names of front-end and back-end suggest, this pertains to the front end programming langauges to create what the user sees in the browers, whereas the back end is to fulfull those requests on the server - combining both of these things is what is responsible for a seamless user experience on the internet (Gallinelli, 2021).
+When we talk about front-end, we are talking about the visual aspects of what the user sees and how it responds; this could be the text, background, icons, interactions with the mouse like an animation that hovers or changes colours.
+
+This is the Spotify front-end tech stack and how it is utilised.
+
+When we talk about back-end, we are talking about the aspects that the user can not see but is what creates the user experience with a brower. The back-end is the brain behind the front and create the logic, data and analytics (Gallinelli, 2021) and is done so by using these logics when a user requests information by either selecting, inputing and utilising the data of the browser .
+
+This is the Spotify back-end tech stack and how it is utilised.
 
 
-
-
+In addition, there are other technologies that play an important part in a full-stack tech stack; some of these that spotify user include;
 
 #### Describe or make educated guesses about the hardware used to host the app.
+
+Every mobile application runs on databases and Spotify is no exception. These databases are there to conduct data and have the ability to aggregate, analyse and manipulate the data. With Spotify having over 626 million users (Spotify — about Spotify, n.d.) these databases need storage and connectivity, which is where hosting of the data comes in.
+
+- what is hosting
+
+- what spotify uses (cloud) with leveraging AWS hosting and data management
+- educated guesses - this is due to spotify being able to run with high performance, a lot of storage, security and data centres
+
+
 #### Describe the interaction of technologies within the app.
 #### Describe the way data is structured within the app’s database(s).
 #### Identify the entities/tables that are tracked within the app’s database(s).
@@ -419,3 +422,9 @@ Fortinet. (n.d.). What Is Data Integrity? Types, Risks and How to Ensure. Fortin
 Naeem, T. (2020, February 12). Data Integrity in a Database - Why Is It Important. Astera. https://www.astera.com/type/blog/data-integrity-in-a-database/
 
 Naeem, T. (2020, March 12). Data Manipulation Tools - Understanding the Basics. Astera. https://www.astera.com/type/blog/data-manipulation-tools/
+
+Spotify Tech Stack. (n.d.). Himalayas. https://himalayas.app/companies/spotify/tech-stack
+
+Gallinelli, N. (2021, January 13). Front End vs. Back End Development. Flatiron School. https://flatironschool.com/blog/front-end-vs-back-end-development/
+
+Spotify — About Spotify. (n.d.). Spotify. https://newsroom.spotify.com/company-info/#:~:text=We%20are%20the%20world%27s%20most

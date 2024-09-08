@@ -62,7 +62,7 @@ Being able to adopt and adapt API testing is fundamental and is an absolute nece
 ## Q6
 
 Information system security, or otherwise referred to as InfoSec is the processes and procedural tools designed to protect individual, businesses and organisations information - whether that information being modified, destroyed, disrupted, recorded or inspected.
-Information security is becoming increasingly more important than ever due to the vast development of technology in the 21st century. It is critical that certain data such as financial data, customer account details, intellectual property etc are protected as this could lead to consequences of this data being stolen, data tampering or deletion. [ insert reference [
+Information security is becoming increasingly more important than ever due to the vast development of technology in the 21st century. It is critical that certain data such as financial data, customer account details, intellectual property etc are protected as this could lead to consequences of this data being stolen, data tampering or deletion (Principle of Information System Security, 2020).
 Amongst a business standpoint, this can disrupt and damage a reputation of the business causing tangible costs amongst the owners and investors, on an individual standpoint this data could be used against them with the incidents of identity theft or even blackmail.
 
 Confidentiality, Integrity and Availability are the three structures of what is also known as the CIA Triad (Geveye, 2023). These structures have an ultimate goal in place as a whole, however they have their own individual goals;
